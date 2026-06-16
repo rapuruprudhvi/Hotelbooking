@@ -242,10 +242,10 @@ function openBookingModal(roomId) {
         populateBookingModal(room, checkIn, checkOut, guests);
         bsModal.show();
     } else {
-        // If modal doesn't exist, redirect to confirmation
+        // If modal doesn't exist, redirect to error page
         showInfo('Redirecting to booking page...');
         setTimeout(() => {
-            window.location.href = `booking-confirmation.html?room=${roomId}`;
+            window.location.href = 'error.html';
         }, 1000);
     }
 }
@@ -511,9 +511,9 @@ function setupBookingForm(room) {
                     const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
                     if (modal) modal.hide();
 
-                    // Redirect to confirmation page
+                    // Redirect to error page
                     setTimeout(() => {
-                        window.location.href = `booking-confirmation.html?id=${booking.id}`;
+                        window.location.href = 'error.html';
                     }, 1500);
                 } else {
                     showError('Failed to create booking. Please try again.');

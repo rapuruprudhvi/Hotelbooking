@@ -253,36 +253,27 @@ body{
 }
 
 .dashboard-card .icon{
-
-    width:70px;
-
-    height:70px;
-
-    border-radius:18px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #06b6d4,
-        #8b5cf6
-    );
-
+    width:80px;
+    height:80px;
+    border-radius:20px;
+    background:linear-gradient(135deg, #06b6d4, #8b5cf6);
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(139,92,246,0.3);
+    transition:all 0.3s ease;
+}
 
+.dashboard-card:hover .icon{
+    transform:scale(1.1) rotate(5deg);
+    box-shadow:0 15px 35px rgba(139,92,246,0.5);
 }
 
 .dashboard-card .icon i{
-
     color:#ffffff;
-
-    font-size:28px;
-
+    font-size:36px;
+    filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .dashboard-card h3{

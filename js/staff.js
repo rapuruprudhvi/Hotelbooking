@@ -71,7 +71,19 @@ function updateStaffInfo() {
 
     const userNameProfileEl = document.getElementById('userNameProfile');
     if (userNameProfileEl) {
-        userNameProfileEl.textContent = currentUser.firstName;
+        userNameProfileEl.textContent = `${currentUser.firstName} ${currentUser.lastName}`;
+    }
+
+    // Update user role
+    const userRoleEl = document.getElementById('userRole');
+    if (userRoleEl) {
+        userRoleEl.textContent = currentUser.role || 'Staff';
+    }
+
+    // Update user email
+    const userEmailEl = document.getElementById('userEmail');
+    if (userEmailEl) {
+        userEmailEl.textContent = currentUser.email;
     }
 
     // Update profile image if exists

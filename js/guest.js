@@ -106,6 +106,12 @@ function updateUserInfo() {
     emailElements.forEach(el => {
         el.textContent = currentUser.email;
     });
+
+    // Update email in profile section
+    const userEmailEl = document.getElementById('userEmail');
+    if (userEmailEl) {
+        userEmailEl.textContent = currentUser.email;
+    }
 }
 
 // ======================================
