@@ -1,0 +1,35 @@
+/* PREVIOUS BUTTON */
+
+.previous-btn{
+
+    border:2px solid #ffffff;
+    background:transparent;
+    color:#ffffff;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.previous-btn:hover{
+
+    background:#ffffff;
+    color:#111111;
+
+
+
+}
+.home-btn,
+.previous-btn{
+
+    min-width:220px;
+    text-align:center;
+
+}

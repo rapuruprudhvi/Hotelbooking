@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Guest Dashboard |
+        Stackly Resort
+
+    </title>
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/guest.css">
+
+</head>
+
+<body>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- ==========================
+         SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <a href="index.html" style="cursor: pointer;">
+                <img
+                    src="images/image.png"
+                    alt="Logo">
+            </a>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    My Bookings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-bed"></i>
+
+                    Reserve Room
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Wishlist
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                    Payments
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    Support
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Profile
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#" id="logoutBtn">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ==========================
+         MAIN CONTENT
+    =========================== -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <div>
+
+                <h2>
+
+                    Welcome Back,
+                    Vivek 👋
+
+                </h2>
+
+                <p>
+
+                    Manage your bookings
+                    and enjoy your stay.
+
+                </p>
+
+            </div>
+
+            <div class="guest-profile">
+
+                <img
+                    src="https://i.pravatar.cc/100?img=15"
+                    alt="Guest">
+
+                <div>
+
+                    <h6>
+
+                        Vivek
+
+                    </h6>
+
+                    <small>
+
+                        Premium Member
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             STATS
+        =========================== -->
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <h3>
+
+                        8
+
+                    </h3>
+
+                    <p>
+
+                        Total Bookings
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-bed"></i>
+
+                    <h3>
+
+                        2
+
+                    </h3>
+
+                    <p>
+
+                        Active Reservations
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>
+
+                        12
+
+                    </h3>
+
+                    <p>
+
+                        Wishlist Rooms
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>
+
+                        Gold
+
+                    </h3>
+
+                    <p>
+
+                        Membership Status
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             MY BOOKINGS
+        =========================== -->
+
+        <div class="table-section mt-5">
+
+            <h4>
+
+                My Recent Bookings
+
+            </h4>
+
+            <div class="table-responsive">
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Booking ID</th>
+                            <th>Room</th>
+                            <th>Check-In</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#BK1001</td>
+
+                            <td>Luxury Suite</td>
+
+                            <td>20 Jul 2026</td>
+
+                            <td>
+
+                                <span class="status confirmed">
+
+                                    Confirmed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#BK1002</td>
+
+                            <td>Deluxe Room</td>
+
+                            <td>05 Aug 2026</td>
+
+                            <td>
+
+                                <span class="status pending">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+                                                <tr>
+
+                            <td>#BK1003</td>
+
+                            <td>Royal Villa</td>
+
+                            <td>18 Sep 2026</td>
+
+                            <td>
+
+                                <span class="status completed">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             WISHLIST & PAYMENTS
+        =========================== -->
+
+        <div class="row g-4 mt-4">
+
+            <!-- Wishlist -->
+
+            <div class="col-lg-6">
+
+                <div class="info-card">
+
+                    <h4>
+
+                        Wishlist Rooms ❤️
+
+                    </h4>
+
+                    <ul class="wishlist-list">
+
+                        <li>
+
+                            🏨 Presidential Suite
+
+                        </li>
+
+                        <li>
+
+                            🌊 Ocean View Room
+
+                        </li>
+
+                        <li>
+
+                            👑 Royal Luxury Villa
+
+                        </li>
+
+                        <li>
+
+                            🌴 Premium Garden Suite
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Payments -->
+
+            <div class="col-lg-6">
+
+                <div class="info-card">
+
+                    <h4>
+
+                        Recent Payments 💳
+
+                    </h4>
+
+                    <ul class="payment-list">
+
+                        <li>
+
+                            ₹12,500 -
+                            Luxury Suite
+
+                            <span>
+
+                                Paid
+
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            ₹8,999 -
+                            Deluxe Room
+
+                            <span>
+
+                                Paid
+
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            ₹21,000 -
+                            Royal Villa
+
+                            <span>
+
+                                Paid
+
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             SUPPORT REQUESTS
+        =========================== -->
+
+        <div class="support-card mt-5">
+
+            <h4>
+
+                Support Requests 🎧
+
+            </h4>
+
+            <div class="support-item">
+
+                <span>
+
+                    Room Service Request
+
+                </span>
+
+                <strong>
+
+                    Completed
+
+                </strong>
+
+            </div>
+
+            <div class="support-item">
+
+                <span>
+
+                    Airport Pickup Request
+
+                </span>
+
+                <strong>
+
+                    Pending
+
+                </strong>
+
+            </div>
+
+            <div class="support-item">
+
+                <span>
+
+                    Spa Reservation
+
+                </span>
+
+                <strong>
+
+                    Confirmed
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             QUICK ACTIONS
+        =========================== -->
+
+        <div class="quick-actions mt-5">
+
+            <h4>
+
+                Quick Actions
+
+            </h4>
+
+            <div class="row g-4 mt-2">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <i class="fa-solid fa-bed"></i>
+
+                        <h5>
+
+                            Book Room
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <h5>
+
+                            View Wishlist
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                        <h5>
+
+                            Payments
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <h5>
+
+                            Contact Support
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Utility Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/auth.js"></script>
+
+    <!-- Guest Dashboard JS -->
+
+    <script
+        src="js/guest.js">
+    </script>
+
+</body>
+
+</html>

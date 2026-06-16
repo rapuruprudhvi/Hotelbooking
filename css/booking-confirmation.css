@@ -1,0 +1,364 @@
+/* ========================================
+   BOOKING CONFIRMATION PAGE
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* ========================================
+   CONFIRMATION SECTION
+   ======================================== */
+
+.confirmation-section {
+    padding: 20px 0;
+}
+
+/* ========================================
+   SUCCESS ANIMATION
+   ======================================== */
+
+.success-animation {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.4);
+    animation: scaleIn 0.5s ease-out 0.3s both;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.checkmark-circle i {
+    font-size: 50px;
+    color: white;
+    animation: checkmarkDraw 0.3s ease-out 0.6s both;
+}
+
+@keyframes checkmarkDraw {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.success-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.success-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================
+   BOOKING DETAILS CARD
+   ======================================== */
+
+.booking-details-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.booking-details-card .card-header {
+    background: linear-gradient(135deg, #d4af37, #f4d03f);
+    padding: 30px;
+    text-align: center;
+}
+
+.booking-details-card .card-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.booking-id {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.booking-id span {
+    color: #111;
+    font-weight: 700;
+}
+
+.booking-details-card .card-body {
+    padding: 40px;
+}
+
+/* ========================================
+   DETAIL SECTIONS
+   ======================================== */
+
+.detail-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-section:last-child {
+    border-bottom: none;
+}
+
+.detail-section h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.detail-section h5 i {
+    color: #d4af37;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    font-size: 0.95rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.detail-row .value {
+    font-size: 1rem;
+    color: #111827;
+    font-weight: 600;
+}
+
+.detail-row .value.highlight {
+    font-size: 1.3rem;
+    color: #d4af37;
+}
+
+.special-requests-text {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    color: #4b5563;
+    margin: 0;
+}
+
+/* ========================================
+   CARD FOOTER
+   ======================================== */
+
+.booking-details-card .card-footer {
+    background: #f9fafb;
+    padding: 30px;
+    border-top: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-buttons .btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.action-buttons .btn-primary {
+    background: linear-gradient(135deg, #d4af37, #f4d03f);
+    border: none;
+    color: #111;
+}
+
+.action-buttons .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.action-buttons .btn-outline-primary {
+    border: 2px solid #d4af37;
+    color: #d4af37;
+}
+
+.action-buttons .btn-outline-primary:hover {
+    background: #d4af37;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.action-buttons .btn-outline-secondary {
+    border: 2px solid #6b7280;
+    color: #6b7280;
+}
+
+.action-buttons .btn-outline-secondary:hover {
+    background: #6b7280;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   ADDITIONAL INFO
+   ======================================== */
+
+.additional-info {
+    margin-top: 30px;
+}
+
+.additional-info p {
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.additional-info a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .success-title {
+        font-size: 2rem;
+    }
+
+    .success-subtitle {
+        font-size: 1rem;
+    }
+
+    .checkmark-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .checkmark-circle i {
+        font-size: 40px;
+    }
+
+    .booking-details-card .card-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .booking-details-card .card-body {
+        padding: 25px;
+    }
+
+    .booking-details-card .card-footer {
+        padding: 20px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .success-animation,
+    .action-buttons,
+    .additional-info {
+        display: none !important;
+    }
+
+    .booking-details-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .booking-details-card .card-header {
+        background: #f3f4f6;
+        color: #111;
+    }
+}

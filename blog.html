@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Blog | Stackly Resort & Hotel
+    </title>
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css">
+
+    <link
+        rel="stylesheet"
+        href="css/blog.css">
+
+    <link
+        rel="stylesheet"
+        href="css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         NAVBAR
+    ====================================== -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/image.png" alt="Logo" class="logo">
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">
+                            Rooms
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2 navbar-buttons">
+
+                    <button class="signin-btn">
+                        Sign In
+                    </button>
+
+                    <button class="signup-btn">
+                        Sign Up
+                    </button>
+
+                    <button class="book-btn">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- =====================================
+         HERO SECTION
+    ====================================== -->
+
+    <section class="blog-hero">
+
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center">
+
+                <div class="col-lg-8">
+
+                    <div class="blog-hero-content">
+
+                        <span>
+                            Travel • Lifestyle • Luxury
+                        </span>
+
+                        <h1>
+                            Stories, Travel Tips &
+                            Luxury Experiences
+                        </h1>
+
+                        <p>
+
+                            Explore inspiring travel
+                            stories, resort updates,
+                            destination guides and
+                            hospitality insights from
+                            Stackly Resort & Hotel.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         BLOG INTRO
+    ====================================== -->
+
+    <section class="blog-intro py-5">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span>
+                    Latest Articles
+                </span>
+
+                <h2>
+                    Discover Travel Inspiration
+                </h2>
+
+                <p>
+
+                    Stay updated with travel trends,
+                    luxury vacation ideas and exclusive
+                    resort experiences curated by our team.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         FEATURED BLOG
+    ====================================== -->
+
+    <section class="featured-blog pb-5">
+
+        <div class="container">
+
+            <div class="featured-blog-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
+                            class="img-fluid rounded-4"
+                            alt="Featured Blog">
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="featured-content">
+
+                            <span>
+                                Featured Story
+                            </span>
+
+                            <h2>
+                                Top 10 Luxury Destinations
+                                To Visit This Year
+                            </h2>
+
+                            <p>
+
+                                Discover breathtaking
+                                destinations, premium resorts
+                                and unforgettable travel
+                                experiences around the globe.
+
+                            </p>
+
+                            <button class="book-btn">
+                                Read More
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PART 2 STARTS BELOW -->
+         <!-- =====================================
+         BLOG ARTICLES SECTION
+    ====================================== -->
+
+    <section class="blog-posts py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Blog 1 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80"
+                            alt="Travel Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Travel Guide
+                            </span>
+
+                            <h4>
+                                Best Beach Destinations For A Luxury Vacation
+                            </h4>
+
+                            <p>
+                                Explore stunning beaches,
+                                crystal-clear waters and
+                                premium resorts around the world.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    June 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog 2 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80"
+                            alt="Spa Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Wellness
+                            </span>
+
+                            <h4>
+                                Benefits Of Luxury Spa Retreats
+                            </h4>
+
+                            <p>
+                                Learn how wellness programs
+                                can help rejuvenate your body
+                                and mind.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    May 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog 3 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"
+                            alt="Dining Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Fine Dining
+                            </span>
+
+                            <h4>
+                                Culinary Experiences You Must Try
+                            </h4>
+
+                            <p>
+                                Discover gourmet dishes and
+                                premium dining experiences
+                                from world-class chefs.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    April 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog 4 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+                            alt="Nature Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Nature
+                            </span>
+
+                            <h4>
+                                Hidden Paradise Locations Around The World
+                            </h4>
+
+                            <p>
+                                Discover breathtaking natural
+                                escapes perfect for your next
+                                luxury holiday.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    March 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog 5 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+                            alt="Luxury Stay">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Luxury Living
+                            </span>
+
+                            <h4>
+                                What Makes A Hotel Truly Luxury?
+                            </h4>
+
+                            <p>
+                                Explore the details that
+                                transform a hotel stay into
+                                a premium experience.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    February 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog 6 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="blog-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80"
+                            alt="Resort Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-category">
+                                Resort News
+                            </span>
+
+                            <h4>
+                                New Experiences Coming To Stackly Resort
+                            </h4>
+
+                            <p>
+                                Get the latest updates on
+                                new facilities and guest
+                                experiences.
+                            </p>
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    January 2026
+                                </span>
+
+                            </div>
+
+                            <button class="book-btn">
+                                Read Article
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PAGINATION -->
+
+            <div class="pagination-wrapper text-center mt-5">
+
+                <nav>
+
+                    <ul class="pagination justify-content-center">
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">
+                                1
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                2
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                3
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Next
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PART 3 STARTS BELOW -->
+         <!-- =====================================
+         NEWSLETTER SECTION
+    ====================================== -->
+
+    <section class="blog-newsletter py-5">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <h2>
+                            Subscribe To Our Travel Newsletter
+                        </h2>
+
+                        <p>
+                            Get the latest travel guides,
+                            luxury destination tips and
+                            exclusive resort updates directly
+                            in your inbox.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <form class="newsletter-form">
+
+                            <div class="input-group">
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Enter your email">
+
+                                <button
+                                    class="btn newsletter-submit"
+                                    type="submit">
+
+                                    Subscribe
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         BLOG STATS
+    ====================================== -->
+
+    <section class="blog-stats py-5">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <h2>250+</h2>
+
+                        <p>
+                            Travel Articles
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <h2>50K+</h2>
+
+                        <p>
+                            Monthly Readers
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <h2>120+</h2>
+
+                        <p>
+                            Travel Guides
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <h2>100%</h2>
+
+                        <p>
+                            Travel Inspiration
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         CTA SECTION
+    ====================================== -->
+
+    <section class="blog-cta">
+
+        <div class="container text-center">
+
+            <h2>
+                Ready For Your Next Luxury Escape?
+            </h2>
+
+            <p>
+                Discover world-class hospitality,
+                breathtaking destinations and
+                unforgettable resort experiences.
+            </p>
+
+            <button class="book-btn">
+                Book Your Stay
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/image.png" alt="Stackly Resort Logo" style="max-width: 150px; cursor: pointer;">
+                    </a>
+
+                    <p class="footer-description">
+
+                        Explore luxury travel stories,
+                        destination guides and premium
+                        hospitality experiences.
+
+                    </p>
+
+                    <div class="social-icons">
+
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                    <h4 class="footer-title">
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h4 class="footer-title">
+                        Contact
+                    </h4>
+
+                    <ul class="contact-info">
+
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bengaluru, Karnataka
+                        </li>
+
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@stacklyhotel.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h4 class="footer-title">
+                        Newsletter
+                    </h4>
+
+                    <input
+                        type="email"
+                        class="newsletter-input"
+                        placeholder="Enter your email">
+
+                    <button
+                        class="newsletter-btn mt-3">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Stackly Resort & Hotel.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Utility Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Blog JS -->
+
+    <script src="js/blog.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+
+/* ==========================================
+   SERVICES PAGE STYLES
+========================================== */
+
+/* HERO SECTION */
+
+.services-hero{
+    min-height:100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=80');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+}
+
+.services-hero-content{
+    color:#ffffff;
+}
+
+.services-hero-content span{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.services-hero-content h1{
+    font-size:70px;
+    font-weight:800;
+    line-height:1.2;
+    margin:20px 0;
+}
+
+.services-hero-content p{
+    max-width:650px;
+    font-size:18px;
+    line-height:1.8;
+    color:#e5e5e5;
+}
+
+/* INTRO SECTION */
+
+.services-intro{
+    background:#ffffff;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.section-heading h2{
+    font-size:46px;
+    font-weight:700;
+    margin:15px 0;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+}
+
+/* SERVICE CARDS */
+
+.services-section{
+    padding:80px 0;
+}
+
+.service-card{
+    background:#ffffff;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card i{
+    font-size:55px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.service-card h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* HIGHLIGHT SECTION */
+
+.service-highlights{
+    background:#f8f9fa;
+    padding:100px 0;
+}
+
+.service-highlights img{
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.highlight-content span{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.highlight-content h2{
+    font-size:46px;
+    font-weight:700;
+    margin:20px 0;
+}
+
+.highlight-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+.highlight-content ul{
+    margin-top:25px;
+}
+
+.highlight-content ul li{
+    font-weight:500;
+}
+
+/* STATS SECTION */
+
+.services-stats{
+    background:#111111;
+    color:#ffffff;
+    padding:100px 0;
+}
+
+.stat-box h2{
+    font-size:55px;
+    font-weight:800;
+    color:#d4af37;
+}
+
+.stat-box p{
+    color:#dddddd;
+    margin-top:10px;
+}
+
+/* TESTIMONIALS */
+
+.services-testimonials{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.testimonial-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+.stars{
+    color:#d4af37;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.testimonial-card p{
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.testimonial-card h5{
+    font-weight:700;
+}
+
+/* CTA SECTION */
+
+.services-cta{
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1800&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+    color:#ffffff;
+}
+
+.services-cta h2{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.services-cta p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+    color:#eeeeee;
+}
+
+/* BUTTON */
+
+.book-btn{
+    background:#d4af37;
+    color:#111111;
+    border:none;
+    padding:14px 35px;
+    border-radius:50px;
+    font-weight:700;
+    transition:.4s;
+}
+
+.book-btn:hover{
+    background:#c59f28;
+    transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .services-hero-content{
+        text-align:center;
+    }
+
+    .services-hero-content h1{
+        font-size:50px;
+    }
+
+    .highlight-content{
+        margin-top:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services-hero-content h1{
+        font-size:40px;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+
+    .highlight-content h2{
+        font-size:34px;
+    }
+
+    .services-cta h2{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .services-hero-content h1{
+        font-size:32px;
+    }
+
+    .services-hero-content p{
+        font-size:16px;
+    }
+
+    .services-cta h2{
+        font-size:28px;
+    }
+
+    .service-card{
+        padding:25px 20px;
+    }
+
+}

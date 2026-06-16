@@ -1,0 +1,264 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.custom-navbar{
+    background:rgba(15,15,15,0.75);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    padding:15px 0;
+    transition:all .4s ease;
+    z-index:999;
+}
+
+.custom-navbar.scrolled{
+    background:#111111;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    padding:10px 0;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo{
+    width:180px;
+    height:auto;
+    object-fit:contain;
+    transition:all .4s ease;
+}
+
+/* Hover Effect */
+
+.logo:hover{
+    transform:scale(1.08);
+    filter:drop-shadow(
+        0 0 12px rgba(212,175,55,.5)
+    );
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    .logo{
+        width:150px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+    .logo{
+        width:120px;
+    }
+
+}
+
+/* ==========================================
+   NAV LINKS
+========================================== */
+
+.navbar-nav .nav-link{
+    color:#ffffff !important;
+    font-size:15px;
+    font-weight:500;
+    margin:0 12px;
+    position:relative;
+    transition:.4s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#d4af37 !important;
+}
+
+.navbar-nav .nav-link.active{
+    color:#d4af37 !important;
+}
+
+.navbar-nav .nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#d4af37;
+    transition:.4s;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after{
+    width:100%;
+}
+
+/* ==========================================
+   BUTTONS CONTAINER
+========================================== */
+
+.navbar-buttons{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+/* ==========================================
+   SIGN IN BUTTON
+========================================== */
+
+.signin-btn{
+    border:2px solid #ffffff;
+    background:transparent;
+    color:#ffffff;
+    border-radius:50px;
+    padding:10px 22px;
+    font-size:14px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.signin-btn:hover{
+    background:#ffffff;
+    color:#111111;
+}
+
+/* ==========================================
+   SIGN UP BUTTON
+========================================== */
+
+.signup-btn{
+    background:#ffffff;
+    color:#111111;
+    border:none;
+    border-radius:50px;
+    padding:10px 22px;
+    font-size:14px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.signup-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   BOOK NOW BUTTON
+========================================== */
+
+.book-btn{
+    background:#d4af37;
+    color:#111111;
+    border:none;
+    border-radius:50px;
+    padding:10px 25px;
+    font-size:14px;
+    font-weight:700;
+    transition:.4s;
+}
+
+.book-btn:hover{
+    background:#c29d2c;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   TOGGLER
+========================================== */
+
+.navbar-toggler{
+    border:none;
+    box-shadow:none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none !important;
+}
+
+.navbar-toggler-icon{
+    filter:brightness(0) invert(1);
+}
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+@media(max-width:991px){
+
+    .navbar-collapse{
+        background:#111111;
+        margin-top:15px;
+        padding:25px;
+        border-radius:20px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+    }
+
+    .navbar-nav .nav-link{
+        margin:12px 0;
+    }
+
+    .navbar-buttons{
+        flex-direction:column;
+        width:100%;
+        margin-top:20px;
+    }
+
+    .signin-btn,
+    .signup-btn,
+    .book-btn{
+        width:100%;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar-brand{
+        font-size:26px;
+    }
+
+    .navbar-brand i{
+        font-size:24px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:576px){
+
+    .navbar-brand{
+        font-size:22px;
+    }
+
+    .navbar-brand i{
+        font-size:20px;
+    }
+
+}
