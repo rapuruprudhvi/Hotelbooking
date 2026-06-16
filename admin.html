@@ -28,8 +28,12 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Dashboard CSS -->
+    <!-- Dashboard Base CSS -->
+    <link
+        rel="stylesheet"
+        href="css/dashboard-base.css">
 
+    <!-- Admin CSS -->
     <link
         rel="stylesheet"
         href="css/admin.css">
@@ -193,7 +197,7 @@
                 <h2>
 
                     Welcome Back,
-                    Admin 👋
+                    <span id="userName">Admin</span> 👋
 
                 </h2>
 
@@ -214,7 +218,7 @@
 
                 <div>
 
-                    <h6>
+                    <h6 id="userNameProfile">
 
                         Admin User
 
@@ -759,6 +763,7 @@
     <script src="js/validation.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/theme-toggle.js"></script>
 
     <!-- Dashboard JS -->
 

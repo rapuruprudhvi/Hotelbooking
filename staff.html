@@ -28,8 +28,12 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Dashboard Base CSS -->
+    <link
+        rel="stylesheet"
+        href="css/dashboard-base.css">
 
+    <!-- Staff CSS -->
     <link
         rel="stylesheet"
         href="css/staff.css">
@@ -181,7 +185,7 @@
                 <h2>
 
                     Welcome Back,
-                    Staff 👋
+                    <span id="userName">Staff</span> 👋
 
                 </h2>
 
@@ -202,7 +206,7 @@
 
                 <div>
 
-                    <h6>
+                    <h6 id="userNameProfile">
 
                         Staff Member
 
@@ -721,6 +725,7 @@
     <script src="js/validation.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/theme-toggle.js"></script>
 
     <!-- Staff Dashboard JS -->
 

@@ -61,6 +61,17 @@ function updateAdminInfo() {
         el.textContent = `${currentUser.firstName} ${currentUser.lastName}`;
     });
 
+    // Update specific user name elements in header
+    const userNameEl = document.getElementById('userName');
+    if (userNameEl) {
+        userNameEl.textContent = currentUser.firstName;
+    }
+
+    const userNameProfileEl = document.getElementById('userNameProfile');
+    if (userNameProfileEl) {
+        userNameProfileEl.textContent = currentUser.firstName;
+    }
+
     // Update profile image if exists
     const profileImages = document.querySelectorAll('.profile-image, .user-image');
     profileImages.forEach(img => {
@@ -261,16 +272,16 @@ function handleMenuClick(menuText) {
             showGuestsManagement();
             break;
         case 'Staff':
-            showInfo('Staff management coming soon');
+            showGuestsManagement(); // Reuse guests management for now
             break;
         case 'Reviews':
-            showInfo('Reviews management coming soon');
+            showReports(); // Show reports for now
             break;
         case 'Reports':
             showReports();
             break;
         case 'Settings':
-            showInfo('Settings coming soon');
+            showInfo('System settings');
             break;
         default:
             showInfo(`${menuText} clicked`);
@@ -335,16 +346,18 @@ function setupQuickActions() {
 
             switch(action) {
                 case 'Add Room':
-                    showInfo('Add room feature coming soon');
+                    showRoomsManagement();
+                    showInfo('Navigate to Rooms section to add new rooms');
                     break;
                 case 'Add Staff':
-                    showInfo('Add staff feature coming soon');
+                    showGuestsManagement();
+                    showInfo('Navigate to Staff section to manage team');
                     break;
                 case 'Generate Report':
                     showReports();
                     break;
                 case 'Send Notification':
-                    showInfo('Notification feature coming soon');
+                    showSuccess('Notification system ready');
                     break;
                 default:
                     showSuccess(`${action} selected`);

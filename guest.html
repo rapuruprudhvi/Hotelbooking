@@ -28,8 +28,12 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Dashboard Base CSS -->
+    <link
+        rel="stylesheet"
+        href="css/dashboard-base.css">
 
+    <!-- Guest CSS -->
     <link
         rel="stylesheet"
         href="css/guest.css">
@@ -181,7 +185,7 @@
                 <h2>
 
                     Welcome Back,
-                    Vivek 👋
+                    <span id="userName">Guest</span> 👋
 
                 </h2>
 
@@ -202,9 +206,9 @@
 
                 <div>
 
-                    <h6>
+                    <h6 id="userNameProfile">
 
-                        Vivek
+                        Guest
 
                     </h6>
 
@@ -683,6 +687,7 @@
     <script src="js/validation.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/theme-toggle.js"></script>
 
     <!-- Guest Dashboard JS -->
 

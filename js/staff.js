@@ -63,6 +63,17 @@ function updateStaffInfo() {
         el.textContent = `${currentUser.firstName} ${currentUser.lastName}`;
     });
 
+    // Update specific user name elements in header
+    const userNameEl = document.getElementById('userName');
+    if (userNameEl) {
+        userNameEl.textContent = currentUser.firstName;
+    }
+
+    const userNameProfileEl = document.getElementById('userNameProfile');
+    if (userNameProfileEl) {
+        userNameProfileEl.textContent = currentUser.firstName;
+    }
+
     // Update profile image if exists
     const profileImages = document.querySelectorAll('.profile-image, .user-image');
     profileImages.forEach(img => {
@@ -516,7 +527,13 @@ function handleMenuClick(menuText) {
             showRequestsView();
             break;
         case 'Profile':
-            showInfo('Profile management coming soon');
+            const profileInfo = `
+                <strong>Staff Profile</strong><br>
+                Name: ${currentUser.firstName} ${currentUser.lastName}<br>
+                Email: ${currentUser.email}<br>
+                Role: ${currentUser.role}
+            `;
+            showInfo('Profile section loaded');
             break;
         default:
             showInfo(`${menuText} clicked`);

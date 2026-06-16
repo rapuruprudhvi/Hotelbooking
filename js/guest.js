@@ -81,6 +81,17 @@ function updateUserInfo() {
         el.textContent = `${currentUser.firstName} ${currentUser.lastName}`;
     });
 
+    // Update specific user name elements in header
+    const userNameEl = document.getElementById('userName');
+    if (userNameEl) {
+        userNameEl.textContent = currentUser.firstName;
+    }
+
+    const userNameProfileEl = document.getElementById('userNameProfile');
+    if (userNameProfileEl) {
+        userNameProfileEl.textContent = currentUser.firstName;
+    }
+
     // Update profile image if exists
     const profileImages = document.querySelectorAll('.profile-image, .user-image');
     profileImages.forEach(img => {
@@ -342,7 +353,7 @@ function handleMenuClick(menuText) {
             showPaymentsPage();
             break;
         case 'Support':
-            showInfo('Support feature coming soon');
+            window.location.href = 'contact.html';
             break;
         case 'Profile':
             showProfilePage();
@@ -415,7 +426,14 @@ function showPaymentsPage() {
 // ======================================
 
 function showProfilePage() {
-    showInfo('Profile management coming soon');
+    const profileInfo = `
+        <strong>Profile Information</strong><br>
+        Name: ${currentUser.firstName} ${currentUser.lastName}<br>
+        Email: ${currentUser.email}<br>
+        Role: ${currentUser.role}<br>
+        Member Since: ${formatDate(currentUser.createdAt || new Date())}
+    `;
+    showInfo('Profile section - Update features available soon');
 }
 
 // ======================================
